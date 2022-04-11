@@ -63,7 +63,7 @@ ul {
 /* MAIN */
 
 .main{
-    background-color: aqua;
+    background: linear-gradient(to top, blue, rgb(152, 152, 241) );
     grid-area: main;
     min-height: 100vh;
     max-width: 100%;
@@ -90,7 +90,7 @@ figure img{
     display: grid;
     grid-area: main;
     min-height: 100vh;
-    background-color: aqua;
+    background: linear-gradient(to right,rgb(18, 163, 163), rgb(19, 109, 109) ) ;
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -124,6 +124,12 @@ article button {
     border-radius: 1rem;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+article button:hover{
+    background: blue;
+    color: black;
 }
 
 .img-pro{
@@ -135,7 +141,7 @@ article button {
 }
 
 .intro-section{
-    background-color: aqua;
+    background: linear-gradient(to right,rgb(18, 163, 163), rgb(19, 109, 109) ) ;
     min-height: 100vh;
     grid-area: main;
     padding-top: 2%;
@@ -172,15 +178,28 @@ article button {
     width: 75px;
 }
   
-.what-logo{
+.what-logo {
     position: fixed;
     right: 40px;
     bottom: 3px;
     float: left;
     margin-bottom: 30px;
     z-index: 40;
+    perspective: 200px;
+    animation: what-logo 2s linear infinite;
 }
 
+@keyframes what-logo {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      transform: rotateX(0deg) rotateY(180deg);
+    }
+    100% {
+      transform: rotateX(180deg) rotateY(180deg);
+    }
+}
 
 @media (min-width: 700px) {
     .container-grid{
