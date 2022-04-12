@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
-
 
 .container-grid{
     width: 100%;
@@ -21,15 +21,11 @@
 .header {
     background-color: rgb(195, 197, 189);
     grid-area: header;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     justify-items: center;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center; 
     padding: 1rem 3rem;
     border-bottom: 3px solid rgb(106, 106, 214);
     font-size: 15px;
@@ -57,8 +53,6 @@ header nav ul {
 ul {
     list-style: none;
 }
-
-
 
 /* MAIN */
 
@@ -99,7 +93,6 @@ figure img{
     grid-template-columns: repeat(auto-fit,minmax(300px,3fr));
     grid-gap: 3rem;
     min-height: 100vh;
-
 }
   
 article {
@@ -109,7 +102,7 @@ article {
     border-radius: 1rem;
     padding: 2rem;
 }
-  
+
 article img {
     order: -1;
     align-self: center;
@@ -133,21 +126,21 @@ article button:hover{
 }
 
 .img-pro{
-  border: 5px solid gray;
-  width: 200px;
-  height: 200px;
-  padding: 2px;
-  margin: 80px;
-}
-
-.intro-section{
-    background: linear-gradient(to right,rgb(18, 163, 163), rgb(19, 109, 109) ) ;
-    min-height: 100vh;
-    grid-area: main;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
+    border: 5px solid gray;
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    margin: 80px;
+  }
+  
+  .intro-section{
+      background: linear-gradient(to right,rgb(18, 163, 163), rgb(19, 109, 109) ) ;
+      min-height: 100vh;
+      grid-area: main;
+      padding-top: 2%;
+      padding-bottom: 2%;
+  }
+  
 /* FOOTER */
 
 .footer {
@@ -173,11 +166,10 @@ article button:hover{
 .face{
     width: 75px;
 }
-
 .insta{
     width: 75px;
 }
-  
+
 .what-logo {
     position: fixed;
     right: 40px;
